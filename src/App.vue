@@ -30,6 +30,15 @@ export default {
 			return Math.round(done / total * 100) || 0
 		}
 	},
+	watch: {
+		tasks: {
+			deep: true,
+			handler(){
+				localStorage.setItem('tasks', JSON.stringify(this.tasks))
+			}
+			
+		}
+	},
 	methods: {
 		addTask (task) {
 			const sameName = t=> t.name === task.name
@@ -52,6 +61,13 @@ export default {
 			this.tasks[i].pending = !this.tasks[i].pending;
 
 		}
+	},
+	created (){
+
+		const json = localStorage.getItem('tasks')
+		const array = this.taks = JSON.parse(json)
+		this.tasks = Array.isArray(array) ? array : []
+
 	}
 }
 </script>
