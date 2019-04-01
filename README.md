@@ -1,16 +1,20 @@
 # TODO LIST - VUE JS
 
-## Project setup
+Projeto proposto no curso de Vue.js
+
+COMANDOS
+
+## Baixar dependências
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Server para desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilação e minificação para produção
 ```
 npm run build
 ```
