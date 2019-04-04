@@ -41,7 +41,7 @@ export default {
 
 .pending {
     border-left: 12px solid #930000;
-    background-color:  #c40000;
+    background-color:  #ee8206;
 }
 
 .done {
